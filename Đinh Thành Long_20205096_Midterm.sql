@@ -59,7 +59,7 @@ INSERT INTO SinhVien ("SV#", TenSV, NgaySinh, QueQuan, Lop) VALUES
 ('SV013', N'Phạm Trọng Hà', '2001/9/20', N'Quảng Ninh', 'VN003'),
 ('SV014', N'Dương Thế Dũng', '2003/2/1', N'Hải Phòng', 'VN006'),
 ('SV015', N'Nguyễn Tấn Nam', '2004/12/31', N'Hưng Yên', 'VN005'),
-('SV015', N'Nguyễn Quang Tuấn', '2002/02/22', N'Hải Phòng', 'VN004')
+('SV016', N'Nguyễn Quang Tuấn', '2002/02/22', N'Hải Phòng', 'VN004')
 
 INSERT INTO DeTai("DT#", TenDT, TheLoai) VALUES
 ('DT001', N'Tính toán lưới', N'Toán ứng dụng'),
