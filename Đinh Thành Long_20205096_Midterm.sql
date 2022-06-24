@@ -1,6 +1,6 @@
 ﻿CREATE TABLE GiangVien(
 	"GV#" char(6) PRIMARY KEY,
-	HoTen nvarchar(30)	NOT NULL,
+	HoTen nvarchar(30) NOT NULL,
 	NamSinh int NOT NULL,
 	DiaChi nvarchar(50) NOT NULL
 );
