@@ -138,3 +138,12 @@
 --exec sp_3 @N = 3
 
 --task 4
+--create procedure sp_4 @a varchar(7) 
+--as
+--	update nhanvien 
+--	set luong = luong * 110
+--	where right (diachi, (select len(@a))) = @a
+
+--exec sp_4 @a = 'TPHCM'
+
+--task 5
