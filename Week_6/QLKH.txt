@@ -1,5 +1,5 @@
 -- CREATE TABLE GiangVien(
--- 	"GV#" varchar(5) PRIMARY KEY,
+-- 	"GV#" char(5) PRIMARY KEY,
 -- 	HoTen nvarchar(30)	NOT NULL,
 -- 	DiaChi nvarchar(30) NOT NULL,
 -- 	NgaySinh date NOT NULL	
