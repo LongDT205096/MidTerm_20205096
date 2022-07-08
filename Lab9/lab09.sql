@@ -62,11 +62,12 @@
 --('PR20', 'PANTENE Micellar thanh loc & duong am', 'BR03', 'CT04', '2022/11/24', 189507)
 
 --cau b
---create view v_product 
+--create view v_product (product_id, product_name, model_year, list_price, brand_name, category_name) 
 --as
---	select * from products;
+--select c.product_id, c.product_name, c.model_year, c.list_price, d.brand_name, c.category_name 
+--        from (select a.*, b.category_name from products as a inner join categories as b
+--        on a.category_id = b.category_id) as c 
+-- inner join brands as d
+-- on c.brand_id = d.brand_id;
 
---select * from v_product
---where year(model_year) = 2022
-
-alter view 
+--cau c

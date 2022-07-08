@@ -14,7 +14,7 @@ SELECT AVG(Rate) FROM HumanResources.EmployeePayHistory;
 select count(BusinessEntityID) from HumanResources.Employee;
 --8--
 select d.FullName,count(OrderQty) as quantity from Sales.SalesOrderDetail as a
-	inner join 	Sales.SalesOrderHeader as b on b.SalesOrderID = a.SalesOrderID
+	inner join Sales.SalesOrderHeader as b on b.SalesOrderID = a.SalesOrderID
 	inner join Sales.Customer as c on c.CustomerID = b.CustomerID
 	inner join Person.Person as d on c.PersonID = d.BusinessEntityID
 group by FullName
