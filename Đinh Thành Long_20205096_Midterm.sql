@@ -127,6 +127,10 @@ select gv."GV#", gv.HoTen, dt."DT#", dt.TenDT from HuongDan hd
 join GiangVien gv on hd."GV#" = gv."GV#"
 join DeTai dt on hd."DT#"  = dt."DT#"
 
+select * from find_detaihd f
+inner join HuongDan h on h.DT# = f.DT#
+where h.NamThucHien = 2022
+
 --task3
 BACKUP DATABASE QLKH
 TO DISK = 'D:\backups\QLKH.bak';
