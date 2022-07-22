@@ -70,4 +70,6 @@
 -- inner join brands as d
 -- on c.brand_id = d.brand_id;
 
+--select * from v_product where model_year = 2022;
+
 --cau c
