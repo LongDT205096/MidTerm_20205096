@@ -113,19 +113,28 @@
 
 --task 3
 --create view info_prod
+--WITH SCHEMABINDING
 --as 
---	select k.maKH, k.tenKH, k.soDT, m.maMH, mh.tenMH, n.tennhomMH, mh.dongia,  m.ngaymua
---	from khachhang k
---	inner join muahang m on m.maKH = k.maKH
---	inner join mathang mh on m.maMH = mh.maMH
---	inner join nhommathang n on n.manhomMH = mh.nhomhang
+--select k.maKH, k.tenKH, k.soDT, m.maMH, mh.tenMH, n.tennhomMH, mh.dongia, m.ngaymua
+--from dbo.khachhang k
+--	inner join dbo.muahang m on m.maKH = k.maKH
+--	inner join dbo.mathang mh on m.maMH = mh.maMH
+--	inner join dbo.nhommathang n on n.manhomMH = mh.nhomhang
 
 --task 4
 --select * from info_prod
 --where year(ngaymua) = '2015'
 
 --task 5
+--create unique clustered index "unique"
+--on info_prod(ngaymua) 
 
+--create nonclustered index "nonclu"
+--on info_prod(ngaymua)
+
+--set statistics io on
+--select * from info_prod 
+--where ngaymua = '2023/05/27'
 
 --ClassID: 130989
 --
